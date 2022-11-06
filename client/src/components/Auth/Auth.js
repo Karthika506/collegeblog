@@ -27,12 +27,12 @@ const Auth = () => {
         handleShowPassword(false);
     };
 
-    const googleSuccess = () => {
-
+    const googleSuccess = (res) => {
+        console.log(res);
     };
 
     const googleFailure = () => {
-
+        console.log("Google Sign In was unsuccessful. Try Again Later")
     };
 
     return (
