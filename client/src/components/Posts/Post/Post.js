@@ -10,8 +10,9 @@ import { useDispatch } from 'react-redux';
 import { deletePost, likePost } from '../../../actions/posts';
 
 const Post = ({ post, setCurrentId }) =>{
-    const classes = useStyles();
+
     const dispatch = useDispatch();
+    const classes = useStyles();
     
     return(
         <Card className={classes.card}>
@@ -47,6 +48,6 @@ const Post = ({ post, setCurrentId }) =>{
         </Card>
         
     );
-}
+};
 
 export default Post;
